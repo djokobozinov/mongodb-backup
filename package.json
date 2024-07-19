@@ -1,0 +1,19 @@
+{
+	"name": "mongodb-backup",
+	"version": "1.0.0",
+	"description": "Backup and restore your MongoDB",
+	"main": "backup.js",
+	"scripts": {
+		"build": "tsc",
+		"backup": "tsc && node dist/backup.js"
+	},
+	"author": "Gjoko Bozhinov",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"typescript": "^5.5.3"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.11"
+	}
+}
