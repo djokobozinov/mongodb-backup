@@ -4,12 +4,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const backupDirName = 'football';
+const mongoUri = process.env.RESTORE_URI;
+const backupDirName = process.env.BACKUP_DIR_FOLDER || 'backup';
 
-const mongoUri = 'mongodb://localhost:27017/football-test';
 const rootPath = path.resolve(__dirname, '..');
 const backupDir = path.join(rootPath, 'dump', backupDirName);
-console.log(backupDir);
+
 if (!mongoUri) {
 	console.error('MongoDB URI is not defined.');
 	process.exit(1);
