@@ -5,7 +5,8 @@
 	"main": "backup.js",
 	"scripts": {
 		"build": "tsc",
-		"backup": "tsc && node dist/backup.js"
+		"backup": "tsc && node dist/backup.js",
+		"restore": "tsc && node dist/restore.js"
 	},
 	"author": "Gjoko Bozhinov",
 	"license": "ISC",
